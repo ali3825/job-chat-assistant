@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+node_modules/
+frontend/dist/
+data/app.db
+data/raw/
+*.db
+.pytest_cache/
+# resumes must never be committed
+*.pdf
+*.docx
+!docs/**/*.pdf
