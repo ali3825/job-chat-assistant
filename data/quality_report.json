@@ -1,0 +1,70 @@
+{
+  "total_jobs": 1111,
+  "raw_records_before_dedupe": 1119,
+  "duplicates_removed": {
+    "same_title_company_location": 8
+  },
+  "by_source": {
+    "arbeitnow": 992,
+    "remotive": 9,
+    "remoteok": 73,
+    "jobicy": 37
+  },
+  "with_skills_pct": 91.3,
+  "with_experience_stated_pct": 29.2,
+  "with_posted_date_pct": 100.0,
+  "remote_status": {
+    "unknown": 887,
+    "remote": 218,
+    "onsite": 1,
+    "hybrid": 5
+  },
+  "collector_counters": {
+    "adzuna": {
+      "fetched": 0,
+      "accepted": 0,
+      "duplicates": 0,
+      "invalid": 0,
+      "filtered_non_tech": 0
+    },
+    "arbeitnow": {
+      "fetched": 1673,
+      "accepted": 1000,
+      "duplicates": 16,
+      "invalid": 0,
+      "filtered_non_tech": 657
+    },
+    "remotive": {
+      "fetched": 11,
+      "accepted": 9,
+      "duplicates": 0,
+      "invalid": 0,
+      "filtered_non_tech": 2
+    },
+    "remoteok": {
+      "fetched": 99,
+      "accepted": 73,
+      "duplicates": 0,
+      "invalid": 0,
+      "filtered_non_tech": 26
+    },
+    "jobicy": {
+      "fetched": 50,
+      "accepted": 37,
+      "duplicates": 0,
+      "invalid": 0,
+      "filtered_non_tech": 13
+    }
+  },
+  "target_range": [
+    1500,
+    2000
+  ],
+  "meets_minimum": false,
+  "caveats": [
+    "last_verified_at equals scraped_at: it only means the source listed the job at that time.",
+    "Listings may have closed since collection; the app labels them accordingly.",
+    "Experience and skills are extracted heuristically from descriptions and can be wrong."
+  ],
+  "shortfall_note": "Only 1111 listings collected (< 1500). Enable more sources (e.g. Adzuna with free keys), re-run to resume, or use --no-tech-filter."
+}
